@@ -1,0 +1,13 @@
+const express = require('express')
+const router = express.Router()
+const contactController = require('../../controllers/actions/contactController')
+router.post('/ajouterContact',contactController.Ajouter)
+router.get('/liste/contact/:idPers',contactController.ListeContact)
+router.get('/personne/contact',contactController.Personne)
+router.get('/personneParent/contact',contactController.PersonneParent)
+router.get('/personneProf/contact',contactController.PersonneProf)
+router.get('/contactDisponible',contactController.ContactDispo)
+router.get('/contactDisponible/professeur',contactController.ContactDispoProfesseur)
+router.get('/editer/contact/:idContact',contactController.EditerContact)
+router.post('/modifierContact',contactController.Modifier)
+module.exports = router

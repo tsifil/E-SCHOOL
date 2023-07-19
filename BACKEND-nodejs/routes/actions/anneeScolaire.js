@@ -1,0 +1,10 @@
+const express = require('express')
+const router = express.Router()
+const anneeScolaireController = require('../../controllers/actions/anneeScolaireController')
+router.post('/nouveau_anneeScolaire',anneeScolaireController.NouveauAnnee)
+router.get('/liste_anneeScolaire',anneeScolaireController.ListeAnnee)
+router.get('/editer/anneescolaire/:idAs',anneeScolaireController.Editer)
+router.post('/modifier_anneeScolaire',anneeScolaireController.Modifier)
+router.get('/liste_anneeScolaireChoix',anneeScolaireController.ChoixAnnee)
+router.delete('/anneeScolaire/supprimer/:idAs',anneeScolaireController.SupprimerAs)
+module.exports = router

@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/*<main>
+        <h1><%= result.title %></h1>
+        <hr>
+        <div class="sary">
+            <input type='text' value='<%= result.imageUrl %>'>
+            <img src="<%= result.imageUrl %>" alt="<%=result.title%>">
+        </div>
+        <h2><%= result.price %></h2>
+        <p><%=  result.description%></p>
+
+        <form action="/cart" method="post">
+            <input type="hidden" name="productId" value="<%= result.id %>">
+            <button class="btn" type="submit">Add to Cart</button>
+        </form>
+
+    </main>*/

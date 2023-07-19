@@ -1,0 +1,23 @@
+const express = require('express')
+const router = express.Router()
+const parentController = require('../../controllers/actions/parent')
+router.get('/parent/listeEnfant/:idAs/:idPers',parentController.listeEnfant)
+router.post('/afficher/Absence',parentController.AfficherAbs)
+router.post('/eleveNotes',parentController.eleveNotes)
+router.post('/eleveMatieres',parentController.matiereEleve)
+router.post('/elevesprofesseurs',parentController.eleveProfesseur)
+router.post('/nombre/AbsenceInjustifiee',parentController.AbsenceInjustifiee)
+router.post('/nombre/AbsenceJustifiee',parentController.AbsenceJustifiee)
+router.post('/nombre/retard',parentController.NombreRetard)
+router.get('/parent/unEnfant/:idAs/:idPers',parentController.UnEnfant)
+// BULLETIN
+router.post('/parent/verfierBulletin',parentController.VerfierBulletin)
+router.get('/infoEleve_BulletinEleve/:numMatricule/:idEvalua/:idTrimestre/:idClasse',parentController.infoEleve)
+router.get('/bulletinEleve/:idEvalua/:idTrimestre/:idClasse',parentController.BulletinEleve)
+router.get('/parent/appreciation/et/moyenneEleve/:numMatricule/:idEvalua/:idTrimestre/:idClasse',parentController.Appreciation)
+router.get('/parent/rang/:idClasse/:idTrimestre/:idEvalua',parentController.Rang)
+router.get('/parent/moyenneDuplicate/:idClasse/:idTrimestre/:idEvalua',parentController.MoyenneDuplicate)
+router.get('/parent/planning/:numMatricule/:idAs',parentController.ParentHoraire)
+router.get('/parent/corpsEdt/:numMatricule/:idAs',parentController.CorpsEdt)
+module.exports = router
+

@@ -1,0 +1,26 @@
+<header id="main-header">
+
+    <nav class="main-header-nav">
+
+      <% if(isAuthenticated) { %>
+          <li class="main-header-item"><a href="/">Home</a></li>
+          <li class="main-header-item"><a href="/admin">Admin Products</a></li->
+      <% } %>
+
+      <% if(!isAuthenticated) { %>
+
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Sign Up</a></li>
+
+      <% } else{%>
+
+        <li>
+          <form action="/logout" method="post">
+            <button type="submit">Logout</button>
+          </form>
+        </li>
+
+        <%}%>
+
+    </nav>
+</header>

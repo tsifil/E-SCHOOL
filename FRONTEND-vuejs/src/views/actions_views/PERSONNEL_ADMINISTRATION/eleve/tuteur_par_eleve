@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <tuteur_par_eleveVue/>
+    </div>
+</template>
+<script>
+import tuteur_par_eleveVue from '../../../../components/actions_components/PERSONNEL_ADMINISTRATION/eleve/tuteur_par_eleve.vue';
+export default {
+    components:{tuteur_par_eleveVue}
+}
+</script>

@@ -1,0 +1,12 @@
+const express = require('express')
+const router = express.Router()
+const tuteurController = require('../../controllers/actions/tuteurController')
+router.post('/ajouter/tuteur',tuteurController.NouveauTuteur)
+router.get('/enfant/:idAs',tuteurController.Enfant)
+router.get('/personne',tuteurController.Personne)
+router.get('/liste/tuteur',tuteurController.ListeTuteur)
+//router.get('/detailTuteur/:idPers',tuteurController.DetailTuteur)
+router.get('/tuteur/eleve/:idPers',tuteurController.TuteurEleve)
+router.delete('/tuteur/supprimer/eleve/:idTuteur',tuteurController.SupprimerEleve)
+router.delete('/tuteur/supprimer/tuteur/:idPers',tuteurController.SupprimerTuteur)
+module.exports = router

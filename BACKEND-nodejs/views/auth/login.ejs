@@ -1,0 +1,28 @@
+<head>
+
+<%- include('../vue.ejs') %>
+
+</head>
+
+<body>
+
+    <form action="/login" method="POST">
+       
+            <div class="form-control">
+                <label for="title">E-Mail</label>
+                <input type="email" name="email">
+            </div>
+
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            
+            <br>
+
+            <div class="form-control">
+                     <button type="submit">Login</button>
+            </div>
+    </form>
+
+</body>

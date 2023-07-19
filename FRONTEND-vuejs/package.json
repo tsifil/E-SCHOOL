@@ -1,0 +1,80 @@
+{
+  "name": "api_client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@mathieustan/vue-datepicker": "^0.2.11",
+    "@vue/composition-api": "^1.2.3",
+    "@vuelidate/core": "^2.0.0-alpha.26",
+    "@vuelidate/validators": "^2.0.0-alpha.22",
+    "axios": "^0.21.4",
+    "chart.js": "^2.9.4",
+    "chartjs": "^0.3.24",
+    "core-js": "^3.6.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25",
+    "jspdf-html2canvas": "^1.4.9",
+    "jspdf-invoice-template": "^1.4.3",
+    "jw-vue-pagination": "^1.0.3",
+    "material-icons": "^1.4.0",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "sass-loader": "^12.1.0",
+    "save": "^2.9.0",
+    "skeleton-loader-vue": "^1.0.10",
+    "v-select2-component": "^0.4.7",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.3.7",
+    "vue-chartjs": "^5.0.1",
+    "vue-cookies": "^1.8.1",
+    "vue-html2pdf": "^1.8.0",
+    "vue-router": "^3.2.0",
+    "vue-simple-spinner": "^1.2.10",
+    "vue-skeletor": "^1.0.6",
+    "vue-swal": "^1.0.0",
+    "vue2-multiple-vmodels": "^0.1.0",
+    "vue3-select2-component": "^0.1.7",
+    "vuejs-datepicker": "^1.6.2",
+    "vuejs-stepper": "^0.2.4",
+    "vuelidate": "^0.7.7",
+    "vuesax": "^3.12.2",
+    "vuex": "^3.4.0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

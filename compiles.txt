@@ -1,0 +1,3 @@
+-- VUE JS -- => npm run serve
+
+-- NODE JS -- => npm start
